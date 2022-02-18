@@ -500,6 +500,8 @@ mark {
 	flex-direction: row;
 	width: 100%;
 	margin-bottom: 3rem;
+	
+	filter: drop-shadow(0px 8px 4px #0E022033);
 }
 
 .cell-content-container {
@@ -685,6 +687,10 @@ mark {
 	color: #0E0220;
 }
 
+.study-page-wrapper blockquote {
+	font-weight: bold;
+}
+
 .study-content-column {
 	display: flex;
 	flex-direction: row;
@@ -756,6 +762,14 @@ mark {
 	color: white;
 }
 
+.user-persona {
+
+}
+
+.user-persona h6 {
+	font-weight: 600;
+	font-size: 1.25em;
+}
 .study-top-bar {
 	top: 0;
 	left: 0;
@@ -829,7 +843,7 @@ mark {
 			background-color: #E40475;
 		}
 		.square2 {
-			background-color: #E40475;
+			background-color: #FF8A01;
 		}
 		.square3 {
 			background-color: lightskyblue;
@@ -902,7 +916,6 @@ mark {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	margin-bottom: 5%;
 }
 
 .ui-mockup {
@@ -943,7 +956,6 @@ mark {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content:space-around;
-	margin-bottom: 5%;
 }
 
 .ux-mockup {
@@ -1075,6 +1087,10 @@ mark {
 		width: auto;
 	}
 
+	nav {
+		display: none;
+	}
+
 	.study-page-wrapper {
 		margin: 0 200px;
 		width: auto;
@@ -1117,6 +1133,11 @@ mark {
 	#about-link {
 		margin-left: 0;
 	}
+	
+	nav {
+		display: none;
+	}
+
 
 	.study-page-wrapper {
 		margin: auto;
@@ -1259,6 +1280,11 @@ mark {
 		margin: 0 32px;
 		width: auto;
 	}
+	
+	nav {
+		display: none;
+	}
+
 }
 
 @media screen and (max-width: 599px) {
@@ -1342,4 +1368,9 @@ mark {
 		margin: 0 16px;
 		width: auto;
 	}
+	
+	nav {
+		display: none;
+	}
+
 }

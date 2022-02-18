@@ -25,7 +25,6 @@
 		<div class="social-icons">
 			<a href="https://www.instagram.com/composedmender/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
 			<a href="https://www.linkedin.com/in/alexander-jonovich/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-			<!-- <a href="https://dribbble.com/ajonovich" target="_blank" rel="noopener noreferrer"><i class="fab fa-dribbble"></i></a> -->
 		</div>
 
 	</div>
@@ -202,9 +201,9 @@
 
 		void main() {
 
-			vec4 mvPosition = modelViewMatrix * vec4( position, .4 );
+			vec4 mvPosition = modelViewMatrix * vec4(position,.4);
 
-			gl_PointSize = scale * ( 400.0 / - mvPosition.z );
+			gl_PointSize = scale * (400.0/-mvPosition.z);
 
 			gl_Position = projectionMatrix * mvPosition;
 
@@ -222,9 +221,9 @@
 
 		void main() {
 
-			if ( length( gl_PointCoord - vec2( 0.5, 0.5 ) ) > 0.475 ) discard;
+			if (length(gl_PointCoord - vec2(0.5,0.5)) > 0.475) discard;
 
-			gl_FragColor = vec4( vScale, 0.0, cos(vScale) / 2.0, 1.0 );
+			gl_FragColor = vec4(vScale,0.0,cos(vScale) / 2.0,1.0);
 
 		}
 	</script>

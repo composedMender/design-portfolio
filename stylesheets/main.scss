@@ -1,0 +1,17 @@
+@use './base';
+
+
+html, body {
+    
+    color: base.$color-white;
+    background-color: base.$color-black;
+    margin: 0;
+    height: 100%;
+    font-family: base.$font-stack;
+}
+
+#c {
+    height: 100%;
+    width: 100%;
+    display: block;
+}

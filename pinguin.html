@@ -25,7 +25,7 @@
                 <li class="background "><a href="#background">Background</a></li>
                 <li class="research"><a href="#research">Research</a></li>
                 <li class="define"><a href="#define">Define</a></li>
-                <li class="ideation"><a href="#ideation">Ideation</a></li>
+                <!-- <li class="ideation"><a href="#ideation">Ideation</a></li> -->
                 <li class="solution"><a href="#solution">Solution</a></li>
                 <li class="outcome"><a href="#outcome">Outcome</a></li>
             </ul>
@@ -49,8 +49,6 @@
         </div>
     </section>
         
-    
-<!-- The Background -->
     <div class="study-page-wrapper">
         <div class="study-content-column">
             <div class="study-content">
@@ -94,23 +92,23 @@
         <h2>Background</h2>
 
         <p>An important part of student life in college is attending extracurricular events. School events provide a place for 
-            students to come together, meet each other, and enjoy time away from classes. An key task for schools then 
+            students to come together, meet each other, and enjoy time away from classes. A key task for schools then 
             is to inform their students about what's happening around campus.
             </br></br>
-            My friend and I realized there was potential to build a solution that improves the college
+            My friend and I realized there was potential to improve the college
             experience for both schools and their students. Colleges' traditional means of communication
-            aren't particularly effective, and other services like Facebook Events aren't made with
+            aren't particularly effective, and other event services aren't made with
             these problems in mind. 
             </br></br>
             The question became then:
         </p>
-        <blockquote><em>How might we build a system of communication between schools and students?</em></blockquote>
+        <blockquote><em>How might we build a system of communication between schools and students in order to build a stronger community?</em></blockquote>
         
     </div>
     
 
 <!-- PROCESS -->
-        <div class="study-page-wrapper">
+       <!--  <div class="study-page-wrapper">
         <h3>Process</h3>
         <div class="study-content-column">
             <div class="study-content" style="width: 100%;">
@@ -145,25 +143,23 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div> -->
     
 <!-- RESEARCH -->
 <section id="research"></section>
-    <div class="study-page-wrapper">
+    <div class="study-page-wrapper" style="margin-bottom: 0;">
         <h2>Research</h2>
             <p>
-                We began working on defining our problem and doing some research. Before doing work to create an entirely new product or solution, 
+                Before attempting to create an entirely new product or solution, 
                 I started doing research to understand what the market for event planning services looked like and where we could differentiate our 
-                design.
+                design. Then we could have a conversation with potential users to find some of the friction points surrounding school events.
             </p>
-        <h5>Comptitive Analysis</h5>
+        <h5>Competitive Analysis</h5>
             <p>
                 There is an extensive market for event related applications: Facebook Events, Meetr, Trip Advisor, Meetup, Eventbrite, just
                 to name a few. 
-                All of these services have different offerings and ways in which they differentiate, but I didn’t feel like any of the current 
-                offerings were able to do what we needed them to do: build a stronger community.
-            </br></br>
-                I did some analysis on the strengths and weaknesses of existing services to get a better understanding of their positions in the
+                All of these services have different offerings and ways in which they differentiate, so
+                I did some analysis on their strengths and weaknesses to get a better understanding of their positions in the
                 market. 
             </p>
             <div class="study-content-column">
@@ -172,10 +168,12 @@
                     <h6 class="strength">Strengths</h6>
                     <ul>
                         <li>Established user base</li>
+                        <li>Good categorization/search capability</li>
                     </ul>
                     <h6 class="weakness">Weaknesses</h6>
                     <ul>
                         <li>Less popular among college-age students</li>
+                        <li>Not great at searching by location</li>
                     </ul>
                 </div>
                 <div class="study-content">
@@ -196,34 +194,37 @@
                     <h6>Strengths</h6>
                     <ul>
                         <li>Functionality for sales</li>
-                        <li>Established user base</li>
+                        <li>Wide variety of events</li>
                     </ul>
                     <h6 class="weakness">Weaknesses</h6>
                     <ul>
-                        <li>Focused on ticketed events, </br> not free community ones</li>
+                        <li>Focused on ticketed events</li>
                         <li>Hard-to-access location </br> information</li>
                         <li>Little social network capability</li>
                     </ul>
                 </div>
                 <div class="study-content">
-                    <h5>Meetup</h5>
+                    <h5>School software</h5>
                     <h6>Strengths</h6>
                     <ul>
-                        <li>Diverse set of interest groups</li>
+                        <li>Already used by many students</li>
+                        <li>Easy to add features that are relevant </br>to the school</li>
                     </ul>
                     <h6 class="weakness">Weaknesses</h6>
                     <ul>
-                        <li>Suffers when trying to find individual events</li>
-                        <li>Suffers when trying to find individual events</li>
+                        <li>Unrefiend interface</li>
+                        <li>Underdeveloped functionality</li>
                     </ul>
                 </div>
             </div>
-        <h5>talking to people</h5>
+
+        <h5>Talking to Users</h5>
             <p>
-                We started working on research and found some interesting things. We talked with
+                We talked with
                 school administration about how they marketed their events to students. On the student
                 side, we talked with fellow classmates to try to get an understanding for how they
-                went about finding extracurricular activities. Here's some of the findings:
+                went about finding extracurricular activities. Here's some of the key points that
+                seemed to keep showing up:
             </p>
     </div>
 
@@ -276,12 +277,11 @@
             
                 <div class="square2">
                 <div class="content column">
-                    <p></p>
+                    <p>Sticking with friend groups</p>
                 </div>
                 </div>
         </div>
     </div>
-
 <!-- DEFINE -->
 
 <section id="define">
@@ -289,25 +289,93 @@
         <h2>Define</h2>
         <p>
             Now that we had an idea of the differences between the school and the students, it was time to start defining some
-            of the goals for the project. To start:
+            of the goals for the project. From the research it seemed there was a breakdown of communication between the school
+            and the students. Our initial goals were:
         </p>
         <ol>
             <li>Elaborate on who the product is for</li>
             <li>Determine important features</li>
+            <li>Establish constraints</li>
         </ol>
-        <h3>User Personas</h3>
-        <p>There are a few different type of people that would use the service then.</p>
-        <ol>
-            <li>Schools</li>
-            <li>Students looking for something to do</li>
-            <li>Student leaders that need a way to communicate</li>
-        </ol>
-        <h3>Goals and Constraints</h3>
-        <p>stuff about minimum viable product goes here. </p>
+        <h5>User Personas</h5>
+        <p>There are a few different type of people that would use the service. Schools would use it
+            as a means of communicating with their student bodies, and students would use it as a way to
+            search for, explore, and plan things to do with friends.
+        </p>
+    </br></br>
+        <div class="study-content-column">
+            <div class="study-content">
+                <h5>Casey - The Administrator</h5>
+                <p>Casey is a school administrator. She's responsible for managing the promotion of school events
+                    and activities.
+                </p>
+                <div class="study-content-column">
+                    <div class="study-content user-persona" style="background-color: white;">
+                        <h6 style="color: #0E0220;">Goals</h6>
+                        </br>
+                        <ul style="color: #0E0220;">
+                            <li>Minimizing time and effort on marketing</li>
+                            <li>Maximizing student engagment</li>
+                            <li>Accessing metrics to analyze success</li>
+                        </ul>
+                    </div>
+                    <div class="study-content user-persona" style="background-color: white;">
+                        <h6 style="color: #0E0220;">Frustrations</h6>
+                            
+                        </br>
+                        <ul style="color: #0E0220;">
+                            <li>Low attendance</li>
+                            <li>Funds being wasted on ineffective promotions</li>
+                            <li>Difficulty changing details last minute</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="study-content">
+                <h5>Bryce - The Student</h5>
+                <p>Bryce is a college student. He has fun just hanging out with friends,
+                    but sometimes he and they want to go out and look for something new to do.
+                </p>
+                <div class="study-content-column">
+                    <div class="study-content user-persona" style="background-color: white;">
+                        <h6 style="color: #0E0220;">Goals</h6>
+                        </br>
+                        <ul style="color: #0E0220;">
+                            <li>Trying new things</li>
+                            <li>Being able to socialize</li>
+                        </ul>
+                    </div>
+                    <div class="study-content user-persona" style="background-color: white;">
+                        <h6 style="color: #0E0220;">Frustrations</h6>
+                            
+                        </br>
+                        <ul style="color: #0E0220;">
+                            <li>Not being able to find the information </br> he wants quickly</li>
+                            <li>Learning about cool events only </br> after they happened</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p></p>
+            
+        <h5>Goals and Constraints</h5>
+        <p>After some consideration we felt that developing a standalone application that was unassociated with the school
+            or another software was ideal for our situation. This would provide a solution that could theoretically be
+            expanded upon much more easily, say, to apply to a different school.
+        </br></br>
+            We explored the idea of building a social media side to the solution, wherein users could better 
+            interact with each other, form groups, and make/edit their own events. This became out of scope
+            before too long, and we decided that focusing on the main issue of schools posting events and
+            students discovering them would be best for a minimum viable product
+        </p>
     </div>  
 </section>
 
 <!-- IDEATION -->
+<!-- 
 <section id="ideation"></section>
     <div class="study-page-wrapper">
         <h2>Ideation</h2>
@@ -320,10 +388,11 @@
         <div class="ui-mockup-container" id="lofi-prototype">
             <div class="ui-mockup">
                 <img src="/resources/pinguin-ui/wireframes/Android Mobile – 2.png">
+                <p>map view</p>
             </div>
             <div class="ui-mockup">
                 <img src="/resources/pinguin-ui/wireframes/Android Mobile – 1.png">
-                <p>List view of events</p>
+                <p>list view of events</p>
             </div>
             <div class="ui-mockup">
                 <img src="/resources/pinguin-ui/wireframes/Android Mobile – 7.png">
@@ -334,12 +403,36 @@
                 <p>expanded menu</p>
             </div>
         </div>
-    </div>
+    </div> -->
 
 <!-- SOLUTION -->
 <section id="solution"></section>
     <div class="study-page-wrapper">
         <h2>Solution</h2>
+        <div class="study-content-column">
+            <p>
+                I started building some lofi prototypes to get a feel for how some of the interactions and visualizations
+                would look. I wanted to have a view of a map because of how much more visual it was compared to a list view. 
+            </p>
+        </div>
+        <div class="ui-mockup-container" id="lofi-prototype">
+            <div class="ui-mockup">
+                <img src="/resources/pinguin-ui/wireframes/Android Mobile – 2.png">
+                <p>map view</p>
+            </div>
+            <div class="ui-mockup">
+                <img src="/resources/pinguin-ui/wireframes/Android Mobile – 1.png">
+                <p>list view of events</p>
+            </div>
+            <div class="ui-mockup">
+                <img src="/resources/pinguin-ui/wireframes/Android Mobile – 7.png">
+                <p>Experimenting with a hamburger menu</p>
+            </div>
+            <div class="ui-mockup">
+                <img src="/resources/pinguin-ui/wireframes/sideNav – 1.png">
+                <p>expanded menu</p>
+            </div>
+        </div>
 
         <div class="study-content-column">
             <p>
@@ -448,9 +541,6 @@
                     </ul>
                 </div>
             </div>
-            <p>
-                While Pinguin is effectively developed, we temporarily put the project on hold over the course of 2020.
-            </p>
         </div>
     </br></br>
     

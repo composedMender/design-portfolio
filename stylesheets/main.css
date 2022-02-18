@@ -1,0 +1,15 @@
+html, body {
+  color: #FFFFFF;
+  background-color: #0E0220;
+  margin: 0;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+#c {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+/*# sourceMappingURL=main.css.map */
