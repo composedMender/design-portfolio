@@ -1,9 +1,39 @@
 html, body {
-  color: #FFFFFF;
-  background-color: #0E0220;
+  color: #0E0220;
+  background-color: #FFFFFF;
   margin: 0;
   height: 100%;
   font-family: "Poppins", sans-serif;
+}
+
+/* testing color styles */
+.color-block-container {
+  width: 1040px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.color-block {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #FFF73E;
+}
+
+.black {
+  background-color: #0E0220;
+}
+
+.white {
+  background-color: #FFFFFF;
+}
+
+.cyan {
+  background-color: #48E0E4;
+}
+
+.magenta {
+  background-color: #E40475;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */

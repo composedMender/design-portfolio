@@ -1,12 +1,36 @@
 @use './base';
 
-
 html, body {
-    color: base.$color-white;
-    background-color: base.$color-black;
+    color: base.$jds-color-black;
+    background-color: base.$jds-color-white;
     margin: 0;
     height: 100%;
     font-family: base.$font-stack;
+}
+
+/* testing color styles */
+.color-block-container {
+    width: 1040px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.color-block {
+    width: 200px;
+    height: 200px;
+    border: 5px solid base.$jds-color-yellow
+}
+.black {
+    background-color: base.$jds-color-black;
+}
+.white {
+    background-color: base.$jds-color-white;
+}
+.cyan {
+    background-color: base.$jds-color-cyan;
+}
+.magenta {
+    background-color: base.$jds-color-magenta;
 }
 
  /* Style the buttons that are used to open and close the accordion panel */
