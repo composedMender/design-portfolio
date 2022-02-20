@@ -1,9 +1,50 @@
+/* Typography Fundamentals */
+h1 {
+  font-weight: 600;
+  font-size: 6rem;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 3.75rem;
+}
+
+h3 {
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+h4 {
+  font-weight: 800;
+  font-size: 2.25rem;
+}
+
+h5 {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+
+p {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
 html, body {
   color: #0E0220;
   background-color: #FFFFFF;
   margin: 0;
   height: 100%;
   font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 1040px;
+  margin: auto;
 }
 
 /* testing color styles */
@@ -68,4 +109,4 @@ html, body {
   display: block;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=jds-main.css.map */

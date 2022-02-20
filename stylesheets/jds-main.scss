@@ -8,6 +8,10 @@ html, body {
     font-family: base.$font-stack;
 }
 
+body {
+    width: 1040px;
+    margin: auto;
+}
 /* testing color styles */
 .color-block-container {
     width: 1040px;
