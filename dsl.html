@@ -7,11 +7,54 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./stylesheets/jds-main.css">
+    <link rel="shortcut icon" src="./favicon.ico">
+
     <title>DSL</title>
 </head>
 <body>
     <h1>Let's begin</h1>
+    <script id="vertexShader" type="x-shader/x-vertex">
+
+        precision highp float;
+
+        attribute float power;
+		uniform float tAudioData;
+		varying float vScale;
+
+        uniform float uTime;
+        uniform float uRandom;
+
+		void main() {
+
+			vec4 mvPosition = modelViewMatrix * vec4(position,.2);
+
+			gl_PointSize = power * (500.0/-mvPosition.z);
+
+			gl_Position = projectionMatrix * mvPosition;
+
+			vScale = power / 100.0;
+		}
+
+    </script>
+
+    <script id="fragmentShader" type="x-shader/x-fragment">
+
+        precision highp float;
+
+		uniform vec3 color;
+		uniform float u_time;
+		varying float vScale;
+
+		void main() {
+
+			if (length(gl_PointCoord - vec2(0.5,0.5)) > 0.475) discard;
+
+			gl_FragColor = vec4(vScale,0.5,0.5,1.0);
+
+		}
+
+    </script>
     <canvas id="c"></canvas>
-    <script type="module" src="./anima.js"></script>
+    <script type="module" src="./scripts/anima.js"></script>
 </body>
 </html>
